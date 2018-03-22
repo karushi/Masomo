@@ -1,0 +1,38 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="vienooewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  
+    <nav class="navbar navbar-light "style="background-color: #480000;">
+        <a class="navbar-brand">
+          <img src="{% static 'image/logo.jpeg'%}" alt="logo" width="60" height="60">
+        </a>
+        <form class="form-inline" role="search" action="{% url 'search_results' %} ">
+          <input class="form-control mr-sm-20" type="search" placeholder="Search user" name="name">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+         
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+            <a href="#" id="instTitle" style=" margin-right:10px; font-size:25px;">
+              <i class="fa fa-user-o" style="font-size:px;color:white"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-compass" style="font-size:24px;color:white" href="#"></i>
+            </a>
+  
+            <a href="/logout">
+              <i class="fa fa-sign-out" style="font-size:24px;color:white"></i>
+            </a>
+      
+        </div>
+        
+       
+        
+      </nav>
+</body>
+</html>
