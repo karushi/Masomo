@@ -143,3 +143,4 @@ STATICFILES_DIRS = [
 
 
 # Email configurations remember to install python-decouple
+LOGIN_REDIRECT= "index"
