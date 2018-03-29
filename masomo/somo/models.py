@@ -48,7 +48,6 @@ class Student(models.Model):
 class Subject(models.Model):
   Name_subject = models.CharField(max_length=25)
   Student = models.ForeignKey(Student,on_delete=models.CASCADE)
-  Marks = models.IntegerField()
 
 
 @classmethod
@@ -57,5 +56,9 @@ def delete_subject(self):
 
 def save_subject(self):
       self.save()      
+
+class Fees(models.Model):
+  Student = models.ForeignKey(Student,on_delete=models.CASCADE)
+  fees = models.IntegerField(null=True)      
   
       

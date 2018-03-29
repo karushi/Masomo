@@ -1,3 +1,4 @@
+
 """
 WSGI config for masomo project.
 
@@ -14,3 +15,4 @@ from django.core.wsgi import get_wsgi_application
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "masomo.settings")
 
 application = get_wsgi_application()
+
