@@ -9,12 +9,11 @@
            <table id="example" class="table table-striped table-bordered" style="width:100%">
             <thead>
                   <tr>
-                      <th>AdmNo</th>
+                      <th><a href="{%url 'pdf'%}">AdmNo</a></th>
                       <th>Name</th>
                       <th>Grade</th>
                       <th>Form</th>
-                      <th>Marks</th>
-                      <th></th>
+                       <th><a href="{%url 'fees'%}">Fees</a></th>
                     </tr>
               </thead>
               <tbody>
@@ -24,6 +23,7 @@
                     <td>{{student.student_grade.Name}}</td>
                     <td>{{student.Form_class}}</td>
                     <td>{{student.student_grade.Marks}}</td>
+                    <td>{{student.Fees}}</td>
                   </tr>    
               </tbody>
 
