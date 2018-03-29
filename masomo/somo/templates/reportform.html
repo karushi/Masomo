@@ -1,11 +1,199 @@
-{%extends 'base.html'%} 
-{% block content %}
-<div class="container">
-  <img src="{% static 'image/logo.jpeg'%}" alt="logo" width="60" height="60">
-     <p>Kibera Girls Soccer Acardemy</p>
-     <p></p>
-    {% endfor %}
-  {% endif %}
-  </div>
-</div>
-{% endblock %}
+{%load static%}
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+ <html>
+     <head>
+         <title>Title</title>
+         <style type="text/css">
+             body {
+                 font-weight: 200;
+                 font-size: 14px;
+             }
+             .header {
+                 font-size: 20px;
+                 font-weight: 100;
+                 text-align: center;
+                 color: #007cae;
+             }
+             .title {
+                 font-size: 22px;
+                 font-weight: 100;
+                /* text-align: right;*/
+                padding: 10px 20px 0px 20px;  
+             }
+             .title span {
+                 color: #007cae;
+             }
+             .details {
+                 padding: 10px 20px 0px 20px;
+                 text-align: left !important;
+                 /*margin-left: 40%;*/
+             }
+             .hrItem {
+                 border: none;
+                 height: 1px;
+                 /* Set the hr color */
+                 color: #333; /* old IE */
+                 background-color: #fff; /* Modern Browsers */
+             }
+             table, td, th {    
+              border: 1px solid rgb(48, 5, 5);
+              text-align: left;
+              
+          }
+          
+          table {
+              border-collapse: collapse;
+              width: 100%;
+          }
+          
+          th, td {
+              padding:10px;
+          }
+
+          .details p{
+            text-align: center;
+          }
+
+          .details h1{
+            text-align: center;
+            color: #480000;
+          }
+
+       
+          </style>
+         </style>
+     </head>
+     <body>
+         <div class='wrapper'>
+             <div class='header'>
+                
+                 <img src="https://omprakash.s3.amazonaws.com/uploads/partner_other_detail/logo/118/77312b0c-7325-4d4d-a8a3-ffbff1be68b4.jpg" alt="logo" width="100" height="100">
+             </div>
+         <div>
+         <div class='details'>
+       <h1> Kibera Girls Soccer Academy</h1> 
+       <p>Education is The Key To the Future</p>
+                <p>Contacts: 0728942912</p>
+                <p>Email: kgsa@gmail.ocm</p>
+            </div>
+            <h3> Class Techear: Mr Alex</h3> 
+            <h3>Student: Pauline karush</h3>        
+             <table id="example" class="table" style="width:100%">
+              <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Marks</th>
+                        <th>Grade</th>
+                        <th>description</th>
+                      </tr>
+                </thead>
+                <thead>
+                  <tr>
+                      <th>Marths</th>
+                      <th>80%</th>
+                      <th>A</th>
+                      <th>excellent</th>
+                    </tr>
+              </thead>
+              <thead>
+                <tr>
+            
+                    <th>English</th>
+                    <th>75%</th>
+                    <th>C-</th>
+                    <th>Good</th>
+
+                  </tr>
+            </thead>
+
+           <thead>
+              <tr>
+          
+                  <th>kiswahili</th>
+                  <th>50%</th>
+                  <th>D-</th>
+                  <th>Heko</th>
+
+                </tr>
+          </thead>
+        
+          <thead>
+            <tr>
+        
+                <th>Business</th>
+                <th>70%</th>
+                <th>C-</th>
+                <th>Good</th>
+
+              </tr>
+        </thead>
+
+
+
+        <thead>
+          <tr>
+      
+              <th>Chemistry</th>
+              <th>50%</th>
+              <th>B-</th>
+              <th>Good</th>
+
+            </tr>
+      </thead>
+
+
+
+      <thead>
+        <tr>
+    
+            <th>Biology</th>
+            <th>80%</th>
+            <th>D-</th>
+            <th>very good</th>
+
+          </tr>
+    </thead>
+  
+
+
+    <thead>
+      <tr>
+  
+          <th>Geograpy</th>
+          <th>60%</th>
+          <th>C+</th>
+          <th>very good</th>
+
+        </tr>
+  </thead>
+
+  <thead>
+    <tr>
+
+        <th>CRE</th>
+        <th>90%</th>
+        <th>C+</th>
+        <th>very good</th>
+
+      </tr>
+</thead>
+
+
+    <tr>
+
+        <th>Total</th>
+        <th>700</th>
+        <th>B-</th>
+        <th>very good</th>
+
+      </tr>
+</thead>
+
+    
+      
+    
+        </table>
+         </div>
+     </div>
+     </body>
+ </html>
